@@ -1,40 +1,9 @@
-# nft_minter
-Mint NFT from the given JSON, and store the content on Ethereum Swarm in Beeson
-
-Usage (testing):
-
-```
-yarn blockchain (in a separated terminal)
-```
-
-Copy the private key to .env/OWNER_PRIVATE_KEY
-
-```
-yarn bee (in a separated terminal)
-```
-
-```
-curl -X http://localhost:1633/stamps/10000000/18
-```
-
-Copy the postage batch ID to .env/POSTAGE_BATCH_ID
-
-```
-yarn deploy
-```
-
-Copy the contract address to .env/CONTRACT_ADDRESS
-
-```
-yarn start
-```
-
-**Testing with CURL**
-
+# API
+Mint NFT from the JSON provided by http://add.trace.market 
 Minting NFT:
 
 ```
-curl -X POST http://localhost:3000/mint -H "Content-Type: application/json" -d '{"to": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8", "content": {"foo": "bar"}}'
+curl -X POST http://api.trace.market/mint -H "Content-Type: application/json" -d '{"to": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8", "content": {"foo": "bar"}}'
 ```
 
 Example result:
@@ -50,7 +19,7 @@ Example result:
 Getting NFT metadata by NFT ID:
 
 ```
-curl -X GET http://localhost:3000/metadata/0xafad2547ea3a4e18e86638b6b72120f55889f97c65699d54af735ac60f729f25
+curl -X GET http://api.trace.market/metadata/0xafad2547ea3a4e18e86638b6b72120f55889f97c65699d54af735ac60f729f25
 ```
 
 Example result:
@@ -68,7 +37,7 @@ Example result:
 Getting NFT history by owner address:
 
 ```
-curl -X GET http://localhost:3000/history/0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+curl -X GET http://api.trace.market/history/0x70997970C51812dc3A010C7d01b50e0d17dc79C8
 ```
 
 Example result:
@@ -85,3 +54,5 @@ Example result:
 ```
 
 Every key is an NFT ID, and the value is an array of Swarm hases generated from the MetadataUpdated events.
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/HqnsjQ7K9HU/0.jpg)](https://www.youtube.com/watch?v=HqnsjQ7K9HU "Demo")
