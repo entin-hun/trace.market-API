@@ -8,9 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Install yarn dependencies
-      run: yarn
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@main
       with:
