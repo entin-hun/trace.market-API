@@ -1,4 +1,4 @@
-# API
+# Using this API
 Mint NFT from the JSON provided by http://add.trace.market 
 Minting NFT:
 
@@ -56,3 +56,8 @@ Example result:
 Every key is an NFT ID, and the value is an array of Swarm hases generated from the MetadataUpdated events.
 
 [![Everything Is AWESOME](https://img.youtube.com/vi/HqnsjQ7K9HU/0.jpg)](https://www.youtube.com/watch?v=HqnsjQ7K9HU "Demo")
+
+# Installation
+cd
+yarn install
+yarn start
