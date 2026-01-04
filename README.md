@@ -58,6 +58,6 @@ Every key is an NFT ID, and the value is an array of Swarm hases generated from 
 [![Everything Is AWESOME](https://img.youtube.com/vi/HqnsjQ7K9HU/0.jpg)](https://www.youtube.com/watch?v=HqnsjQ7K9HU "Demo")
 
 # Installation
-cd
-yarn install
-yarn start
+- cd
+- yarn install
+- yarn start
